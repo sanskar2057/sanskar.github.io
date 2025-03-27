@@ -50,7 +50,7 @@ export default function ContactSection() {
     };
 
     return (
-        <div className="mt-16 px-4 sm:px-6 md:px-8 lg:px-0 xl:px-4">
+        <div className="mt-16 px-4 sm:px-6 md:px-8 lg:px-0 xl:px-4" id="contact">
             {/* Header */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
                 <p className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] whitespace-nowrap">
@@ -110,10 +110,10 @@ export default function ContactSection() {
                             <div className="mt-2 p-2 rounded-md bg-[#2D323B] border border-[#C778DD]/50 animate-fadeIn">
                                 <p
                                     className={`text-[12px] sm:text-[13px] md:text-[14px] font-medium transition-colors duration-300 ${status === "Message sent successfully!"
-                                            ? "text-[#98E2A2]"
-                                            : status === "Sending..."
-                                                ? "text-[#C778DD] animate-pulse"
-                                                : "text-[#FF6B6B]"
+                                        ? "text-[#98E2A2]"
+                                        : status === "Sending..."
+                                            ? "text-[#C778DD] animate-pulse"
+                                            : "text-[#FF6B6B]"
                                         }`}
                                 >
                                     {status}
